@@ -15,7 +15,7 @@ RUN apt-get update
 # Unzip is required untill ADD supports zip files
 RUN apt-get install -y openjdk-7-jre-headless unzip
 
-ADD http://dl.bintray.com/content/jfrog/artifactory/artifactory-3.0.3.zip?direct artifactory.zip
+ADD http://dl.bintray.com/content/jfrog/artifactory/artifactory-3.4.2.zip?direct artifactory.zip
 RUN unzip artifactory.zip
 
 # This is needed to run on t1.micro, but shouldn't matter anywhere else
